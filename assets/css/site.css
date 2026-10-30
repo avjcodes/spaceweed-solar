@@ -34,6 +34,11 @@ body::before { content: ""; position: fixed; inset: 0; z-index: -1; pointer-even
 .header-actions { display: flex; align-items: center; gap: var(--space-lg); }
 .header-link, .menu-toggle { min-height: 44px; display: inline-flex; align-items: center; padding: 0 var(--space-2xs); background: none; border: 0; color: var(--color-ink-2); font: 500 var(--text-sm)/1 var(--font-body); text-decoration: none; cursor: pointer; transition: color var(--dur-micro) var(--ease-out); }
 .header-link:hover, .menu-toggle:hover { color: var(--color-ink); }
+.header-nav { display: flex; align-items: center; gap: var(--space-lg); }
+.header-link[aria-current="page"] { color: var(--color-ink); text-decoration: underline; text-decoration-color: var(--color-accent); text-decoration-thickness: 1px; text-underline-offset: 0.4em; }
+/* Every page is a button in the header on a wide screen; the menu sheet takes over where they won't fit. */
+@media (min-width: 60.01rem) { .menu-toggle { display: none; } }
+@media (max-width: 60rem) { .header-nav { display: none; } }
 .menu-toggle { gap: var(--space-xs); }
 .menu-toggle__bars { position: relative; width: 18px; height: 8px; }
 .menu-toggle__bars::before, .menu-toggle__bars::after { content: ""; position: absolute; left: 0; right: 0; height: 1px; background: currentColor; transition: transform var(--dur-short) var(--ease-out); }
