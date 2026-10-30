@@ -1,0 +1,30 @@
+:root {
+  --space-3xs: 2px; --space-2xs: 4px; --space-xs: 8px; --space-sm: 12px; --space-md: 16px; --space-lg: 24px; --space-xl: 40px; --space-2xl: 64px; --space-3xl: 96px; --space-4xl: 144px;
+  --text-xs: 0.8125rem; --text-sm: 0.875rem; --text-md: 1rem; --text-lg: 1.25rem; --text-xl: 1.5625rem; --text-2xl: 1.953rem; --text-3xl: 2.441rem;
+  --text-display-s: clamp(2.25rem, 4vw + 0.5rem, 3.75rem); --text-display: clamp(2.75rem, 5vw + 1rem, 5.25rem);
+  --text-section: clamp(2rem, 2.5vw + 1rem, 3.5rem); --text-title: clamp(1.25rem, 0.75vw + 0.875rem, 1.625rem); --text-lead: clamp(1.0625rem, 0.35vw + 0.9rem, 1.3125rem);
+  /* The headline: big and quiet. Capped at 148px so the warnings below stay well above 10% of it. */
+  --text-hero: clamp(3.5rem, 6.6vw + 1.25rem, 9.25rem);
+  --text-legal: 1.0625rem; /* 17px: 11.5% of the 148px headline, clear of the state's 10% floor */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1); --ease-in: cubic-bezier(0.7, 0, 0.84, 0); --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 120ms; --dur-short: 220ms; --dur-long: 420ms;
+  --color-error: oklch(70% 0.15 27); --color-success: oklch(78% 0.1 150);
+  --container: 1440px; --gutter: 64px; --gap-columns: 32px; --section-gap-s: 120px; --section-gap: 144px; --section-gap-l: 176px;
+  --z-base: 1; --z-raised: 10; --z-dropdown: 100; --z-sticky: 200; --z-sticky-nav: 300; --z-modal: 400; --z-toast: 500; --z-tooltip: 600;
+  /* Space that is actually dark: a near-black with a little blue in it, never #000. */
+  --color-paper: oklch(11.5% 0.006 255); --color-paper-2: oklch(15.5% 0.007 255); --color-paper-3: oklch(20% 0.008 255);
+  /* Ink is warmed by the sun, never pure white. */
+  --color-ink: oklch(95% 0.007 90); --color-ink-2: oklch(86% 0.008 90); --color-muted: oklch(71% 0.01 90);
+  --color-rule: oklch(29% 0.008 255);
+  /* Green is the brand's accent, kept to focus, the active underline and one hairline: the frost on a trichome, not neon. */
+  --color-accent: oklch(86% 0.09 140); --color-accent-ink: oklch(19% 0.02 145); --color-focus: oklch(88% 0.1 140);
+  --font-display: "Supreme", ui-sans-serif, system-ui, sans-serif; --font-body: "Switzer", ui-sans-serif, system-ui, sans-serif; --font-outlier: var(--font-body);
+  --radius-card: 4px; --radius-pill: 999px; --radius-control: 2px; --rule-hair: 1px; --shadow-card: none;
+  --tracking-display: -0.01em;
+  /* The sun's light, read by the scene: a warm white at the bud's rim, deepening outward. */
+  --color-sun: oklch(88% 0.08 72); --color-sun-deep: oklch(64% 0.15 50); --color-night: oklch(30% 0.03 250);
+  --veil: oklch(11.5% 0.006 255 / 0.94);
+  --ink-soft: oklch(95% 0.007 90 / 0.45);
+  --ink-faint: oklch(95% 0.007 90 / 0.07);
+  --label-halo: oklch(11.5% 0.006 255 / 0.92);
+}
