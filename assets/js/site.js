@@ -1,10 +1,10 @@
 /* Space Weed design preview: the age gate, the menu sheet and the forms. Nothing is ever sent. */
 (() => {
-  /* ---------- Age gate: asks on every new visit, remembered for this tab only ---------- */
+  /* ---------- Age gate: asks on every load and refresh, a Yes only carries across clicks between pages ---------- */
   const gate = document.querySelector("[data-gate]");
   if (gate) {
     let ok = false;
-    try { ok = sessionStorage.getItem("sw-21") === "yes"; } catch (e) { ok = false; }
+    try { ok = sessionStorage.getItem("sw-21") === "yes" && (function () { var n = performance.getEntriesByType('navigation')[0], t = n ? n.type : ''; return t !== 'reload' && (t === 'back_forward' || document.referrer.indexOf(location.origin) === 0); })(); } catch (e) { ok = false; }
     if (!ok) {
       gate.hidden = false;
       document.body.classList.add("gate-open");
