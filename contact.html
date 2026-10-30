@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Contact Space Weed</title>
+<meta name="description" content="Reach the Space Weed team about stocking the flower, licensing the process, or press. Email info@spaceweedusa.com.">
+<meta name="theme-color" content="#08090c">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/supreme-500.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/switzer-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css">
+<link rel="modulepreload" href="assets/vendor/three.module.js">
+</head>
+<body class="page-contact">
+<a class="skip" href="#main">Skip to content</a>
+<div class="gate" data-gate hidden role="dialog" aria-modal="true" aria-labelledby="gate-q">
+  <video class="gate__film" muted playsinline preload="auto" poster="assets/img/payload-closed.webp" aria-hidden="true" data-burst-at="5.35">
+    <source src="assets/video/payload-gate.webm" type="video/webm">
+    <source src="assets/video/payload-gate.mp4" type="video/mp4">
+  </video>
+  <div class="gate__panel">
+    <p class="gate__q" id="gate-q">Are you 21 or older?</p>
+    <div class="gate__actions">
+      <button class="btn" type="button" data-gate-yes>Yes</button>
+      <a class="btn" href="under-21.html">No</a>
+    </div>
+  </div>
+  <button class="gate__skip" type="button" data-gate-skip hidden>Skip</button>
+</div>
+<header class="site-header">
+  <a class="brand" href="index.html"><img src="assets/img/logo-white.webp" alt="Space Weed, home" width="640" height="350"></a>
+  <div class="header-actions">
+    <a class="header-link" href="https://shopspaceweed.com" target="_blank" rel="noopener">Merch<span class="visually-hidden"> (opens the merch shop in a new tab)</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu"><span class="menu-toggle__bars" aria-hidden="true"></span>Menu</button>
+  </div>
+</header>
+<div class="menu-sheet" id="menu" hidden>
+  <nav aria-label="Site"><ul><li><a href="index.html">Home</a></li><li><a href="technology.html">Technology</a></li><li><a href="products.html">Products</a></li><li><a href="partner.html">Partner</a></li><li><a href="about.html">About</a></li><li><a href="contact.html" aria-current="page">Contact</a></li></ul></nav>
+</div>
+<main id="main" tabindex="-1">
+<section class="world" data-world="contact" aria-labelledby="c-title" style="--poster: url('assets/img/world-contact.webp')">
+  <canvas class="world__canvas" aria-hidden="true"></canvas>
+  <div class="world__copy">
+    <h1 id="c-title">Contact mission control</h1>
+    <p class="world__lede">Questions about stocking Space Weed, licensing the process, or press? Send us a message and one of our Space Cadets will get back to you in an intergalactic minute.</p>
+    
+  </div>
+</section>
+
+  <section class="contact" aria-label="Contact form">
+    <form class="contact__form" data-mock novalidate>
+      <div class="field"><label for="c-email">Email</label><input id="c-email" type="email" name="email" autocomplete="email" required></div>
+      <div class="field"><label for="c-phone">Phone</label><input id="c-phone" type="tel" name="phone" autocomplete="tel"></div>
+      <div class="field"><label for="c-first">First name</label><input id="c-first" type="text" name="first" autocomplete="given-name"></div>
+      <div class="field"><label for="c-last">Last name</label><input id="c-last" type="text" name="last" autocomplete="family-name"></div>
+      <fieldset class="choices">
+        <legend>How can we help?</legend>
+        <label><input type="radio" name="help" value="find"> Where can I find Space Weed?</label>
+        <label><input type="radio" name="help" value="dispensary"> I’m a budtender or a dispensary</label>
+        <label><input type="radio" name="help" value="grower"> I’m a grower or producer interested in licensing</label>
+        <label><input type="radio" name="help" value="press"> Press</label>
+        <label><input type="radio" name="help" value="else"> Something else</label>
+      </fieldset>
+      <div class="field field--wide"><label for="c-msg">Message</label><textarea id="c-msg" name="message" rows="5"></textarea></div>
+      <button class="btn btn--solid" type="submit">Send</button>
+      <p class="form-note" role="status" aria-live="polite"></p>
+    </form>
+    <p class="contact__mail">Or email <a href="mailto:info@spaceweedusa.com">info@spaceweedusa.com</a></p>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <p class="legal"><strong>21+ only.</strong> Cannabis products may be purchased or possessed only by persons 21 years of age or older.</p>
+    <p class="legal">This product has intoxicating effects and may be habit forming. Cannabis can impair concentration, coordination, and judgment. Do not operate a vehicle or machinery under the influence of this drug. There may be health risks associated with consumption of this product. For use only by adults 21 and older. Keep out of the reach of children.</p>
+    <ul class="footer-links">
+      <li><a href="mailto:info@spaceweedusa.com">info@spaceweedusa.com</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="links.html">Links</a></li>
+      <li><span>Privacy Policy</span></li>
+      <li><span>Terms of Use</span></li>
+      <li><span>Accessibility</span></li>
+    </ul>
+    <p class="preview-note">Design preview. Not the live site. Sky: <a href="https://svs.gsfc.nasa.gov/4851" target="_blank" rel="noopener">NASA/Goddard Space Flight Center Scientific Visualization Studio</a>. Gaia DR2: ESA/Gaia/DPAC.</p>
+  </div>
+</footer>
+<div class="warp" aria-hidden="true"></div>
+<script src="assets/js/site.js" defer></script>
+<script type="module" src="assets/js/world.js"></script>
+</body>
+</html>
